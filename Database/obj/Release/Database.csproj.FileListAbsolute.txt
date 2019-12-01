@@ -1,0 +1,5 @@
+E:\Competition\RawNet\Database\bin\Release\Database.dll
+E:\Competition\RawNet\Database\bin\Release\Database.pdb
+E:\Competition\RawNet\Database\obj\Release\Database.csproj.CoreCompileInputs.cache
+E:\Competition\RawNet\Database\obj\Release\Database.dll
+E:\Competition\RawNet\Database\obj\Release\Database.pdb
