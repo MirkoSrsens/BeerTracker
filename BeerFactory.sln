@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.421
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29411.108
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerFactory", "BeerFactory\BeerFactory.csproj", "{176925B4-DABD-4744-96A9-008613554FED}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InjectorContainer", "InjectorContainer\InjectorContainer.csproj", "{C0A22677-477B-4625-B1FD-AC1A17175087}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkService", "NetworkService\NetworkService.csproj", "{8C1836CD-FBBF-479C-92FB-B291EB940A99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebHost", "WebHost\WebHost.csproj", "{D8CDB7A0-8F9A-43A7-B6E7-D58F89F60455}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{8C1836CD-FBBF-479C-92FB-B291EB940A99}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C1836CD-FBBF-479C-92FB-B291EB940A99}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C1836CD-FBBF-479C-92FB-B291EB940A99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8CDB7A0-8F9A-43A7-B6E7-D58F89F60455}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8CDB7A0-8F9A-43A7-B6E7-D58F89F60455}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8CDB7A0-8F9A-43A7-B6E7-D58F89F60455}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8CDB7A0-8F9A-43A7-B6E7-D58F89F60455}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

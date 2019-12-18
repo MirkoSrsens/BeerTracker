@@ -4,8 +4,3 @@ E:\Competition\RawNet\InjectorContainer\obj\Debug\InjectorContainer.csproj.CoreC
 E:\Competition\RawNet\InjectorContainer\obj\Debug\InjectorContainer.dll
 E:\Competition\RawNet\InjectorContainer\obj\Debug\InjectorContainer.pdb
 E:\Competition\RawNet\InjectorContainer\obj\Debug\InjectorContainer.csprojAssemblyReference.cache
-E:\Competition\BeerFactory\InjectorContainer\bin\Debug\InjectorContainer.dll
-E:\Competition\BeerFactory\InjectorContainer\bin\Debug\InjectorContainer.pdb
-E:\Competition\BeerFactory\InjectorContainer\obj\Debug\InjectorContainer.csprojAssemblyReference.cache
-E:\Competition\BeerFactory\InjectorContainer\obj\Debug\InjectorContainer.dll
-E:\Competition\BeerFactory\InjectorContainer\obj\Debug\InjectorContainer.pdb

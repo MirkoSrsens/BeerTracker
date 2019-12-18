@@ -1,0 +1,42 @@
+<div class="container-fluid">
+  <h1>Production Data</h1>
+  </div>
+  <div class='row'>
+        <table class="table table-dark table-striped">
+          <thead>
+            <tr>
+              <th>
+                  <p>Equipment</p>
+                  <input type='text' [(ngModel)]='equipmentIdFilter'/>
+              </th>
+              <th>
+                  <p>Start Time</p>
+                  <button class='btn btn-primary' (click) = 'sortByStartDate(filteredProdSegResponse, startTime)'>Sort</button>
+              </th>
+              <th>
+                <p>Expected end time</p>
+                <button class='btn btn-primary' (click) = 'sortByStartDate(filteredProdSegResponse, expectedEndTime)'>Sort</button>
+              </th>
+              <th>
+                  <p>Beer in production</p>
+                  <input type='text' [(ngModel)]='typeOfBeerFilter'/></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor='let item of filteredProdSegResponse' [routerLink] = "['/productionSegmentResponse', item.oid]">
+                <td>                
+                  {{item.equipmentId}}
+                </td>
+                <td>
+                  {{item.startTime | date: 'medium'}}
+                </td>
+                <td>
+                    {{item.expectedEndTime | date: 'medium'}}
+                </td>
+                <td>
+                  {{item.beerInProduction}}
+                </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>

@@ -1,0 +1,11 @@
+<div class="sidenav">
+    <img src="assets/logo.png">
+    <button type="button" class="btn btn-primary btn-lg btn-block" [routerLink]="['/startPage']">Dashboard</button>
+    <button type="button" class="btn btn-secondary btn-lg btn-block" [routerLink]="['/productionSegmentResponse']">BProduction</button>
+    <button type="button" class="btn btn-secondary btn-lg btn-block" [routerLink]="['/startPage']">Notification</button>
+    <a [routerLink]="['/productionSegmentResponse']" class="text-warning fixed-bottom">Help</a>
+</div>
+
+    <div class="container-fluid">
+        <router-outlet></router-outlet>
+    </div>
