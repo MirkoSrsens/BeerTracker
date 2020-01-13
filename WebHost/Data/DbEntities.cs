@@ -9,11 +9,12 @@ namespace WebHost.Data
 {
     public class DbEntities : DbContext
     {
-        public DbEntities() : base(nameOrConnectionString: "BeerDBconn") { }
+        public DbEntities() : base(nameOrConnectionString: "BeerConn") { }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.HasDefaultSchema("public");
+            modelBuilder.HasDefaultSchema("dbo");
+            base.OnModelCreating(modelBuilder);
         }
 
         public DbSet<ProductionSegmentResponseModel> ProductionSegmentResponseModels { get; set; }

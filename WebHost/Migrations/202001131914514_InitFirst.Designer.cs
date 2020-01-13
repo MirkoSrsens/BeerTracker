@@ -7,13 +7,13 @@ namespace WebHost.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.0")]
-    public sealed partial class Init_Migration : IMigrationMetadata
+    public sealed partial class InitFirst : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Init_Migration));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(InitFirst));
         
         string IMigrationMetadata.Id
         {
-            get { return "202001131844218_Init_Migration"; }
+            get { return "202001131914514_InitFirst"; }
         }
         
         string IMigrationMetadata.Source

@@ -308,5 +308,5 @@ D:\Projekti\BeerFactory\BeerTracker\WebHost\bin\System.Memory.xml
 D:\Projekti\BeerFactory\BeerTracker\WebHost\bin\System.Numerics.Vectors.xml
 D:\Projekti\BeerFactory\BeerTracker\WebHost\bin\System.Threading.Tasks.Extensions.xml
 D:\Projekti\BeerFactory\BeerTracker\WebHost\bin\System.ValueTuple.xml
-D:\Projekti\BeerFactory\BeerTracker\WebHost\obj\Debug\WebHost.Migrations.Init_Migration.resources
+D:\Projekti\BeerFactory\BeerTracker\WebHost\obj\Debug\WebHost.Migrations.InitFirst.resources
 D:\Projekti\BeerFactory\BeerTracker\WebHost\obj\Debug\WebHost.csproj.GenerateResource.cache
