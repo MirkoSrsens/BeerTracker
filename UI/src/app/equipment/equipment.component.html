@@ -1,0 +1,57 @@
+<div class="container-fluid">
+    <h1>Production Data</h1>
+    </div>
+    <div class='row'>
+          <table class="table table-dark table-striped">
+            <thead>
+              <tr>
+                <th>
+                    <p>Oid</p>
+                    <button class='btn btn-primary' (click) = 'sort(filteredEquipments, oid)'>Sort</button>
+                </th>
+                <th>
+                    <p>Id</p>
+                    <input type='text' [(ngModel)]='equipmentIdFilter'/>
+                </th>
+                <th>
+                  <p>State</p>
+                  <button class='btn btn-primary' (click) = 'sort(filteredEquipments, state)'>Sort</button>
+                </th>
+                <th>
+                    <p>Current Capacity</p>
+                    <button class='btn btn-primary' (click) = 'sort(filteredEquipments, currentCapacity)'>Sort</button>
+                </th>
+                <th>
+                    <p>Maximum Capacity</p>
+                    <button class='btn btn-primary' (click) = 'sort(filteredEquipments, maxCapacity)'>Sort</button>
+                </th>
+                <th>
+                    <p>Last inspection date</p>
+                    <button class='btn btn-primary' (click) = 'sort(filteredEquipments, lastInspectionDate)'>Sort</button>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor='let item of filteredEquipments' [routerLink] = "['', item.oid]">
+                  <td>                
+                    {{item.oid}}
+                  </td>
+                  <td>
+                    {{item.id}}
+                  </td>
+                  <td>
+                    {{item.state}}
+                  </td>
+                  <td>
+                    {{item.currentCapacity}}
+                  </td>
+                  <td>
+                    {{item.maxCapacity}}
+                  </td>
+                  <td>
+                      {{item.lastInspectionDate | date: 'medium'}}
+                  </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>

@@ -7,17 +7,17 @@ using WebHost.Models;
 
 namespace WebHost.Controllers
 {
-    [RoutePrefix("ProductionResponses")]
-    public class ProductionSegmentResponseController : ApiController
+    [RoutePrefix("Equipments")]
+    public class EquipmentController : ApiController
     {
         [HttpGet]
         [Route("")]
         public IHttpActionResult getAll()
         {
-            return this.Ok(new List<ProductionResponseModel>()
+            return this.Ok(new List<EquipmentModel>()
             {
-                new ProductionResponseModel(1, DateTime.Now),
-                new ProductionResponseModel(2, new DateTime())
+                new EquipmentModel(1, "As 3245"),
+                new EquipmentModel(2, "Tank 2")
             });
         }
 
@@ -25,7 +25,7 @@ namespace WebHost.Controllers
         [Route("GetByOid/{oid:int}")]
         public IHttpActionResult getByOid(long oid)
         {
-            return this.Ok(new ProductionResponseModel(oid, DateTime.Now));
+            return this.Ok(new EquipmentModel(oid, "Tank info"));
         }
     }
 }

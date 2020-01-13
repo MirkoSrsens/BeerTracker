@@ -1,6 +1,7 @@
 import { ProductionResponseService } from '../../services/production-response.service';
 import { IProductionResponse } from '../../models/IProductionResponse';
 import { Component, OnInit } from '@angular/core';
+import { Extensions } from 'src/app/extensions/extensions';
 
 @Component({
   templateUrl: './production-response.component.html',
@@ -9,12 +10,12 @@ import { Component, OnInit } from '@angular/core';
 export class ProductionResponseComponent implements OnInit {
   
   _equipmentIdFilter: string;
-  _beerInProduction: string;
+  _beerInProductionFilter: string;
   prodSegResponses: IProductionResponse[];
   filteredProdSegResponse: IProductionResponse[];
   errMessage : string;
   sortAscending:boolean;
-  constructor(private productionSegmentResponseService : ProductionResponseService) 
+  constructor(private extensions : Extensions, private productionSegmentResponseService : ProductionResponseService) 
   { 
     this.sortAscending = false;
   }
@@ -27,16 +28,22 @@ export class ProductionResponseComponent implements OnInit {
   {
     this._equipmentIdFilter = value;
     this.filteredProdSegResponse = this._equipmentIdFilter 
-    ? this.performFilter(value, this.prodSegResponses, "equipmentId") 
+    ? this.extensions.performFilter(value, this.prodSegResponses, "equipmentId") 
     :  this.prodSegResponses;
   }
 
   set typeOfBeerFilter(value: string)
   {
-    this._beerInProduction = value;
-    this.filteredProdSegResponse = this._beerInProduction 
-    ? this.performFilter(value, this.prodSegResponses, "beerInProduction") 
+    this._beerInProductionFilter = value;
+    this.filteredProdSegResponse = this._beerInProductionFilter 
+    ? this.extensions.performFilter(value, this.prodSegResponses, "beerInProduction") 
     :  this.prodSegResponses;
+  }
+
+  sort<T extends object>(collection: T[], propertyToSort: string, sortAscending)
+  {
+    this.sortAscending = !sortAscending;
+    this.extensions.sortByStartDate(collection, propertyToSort, sortAscending);
   }
 
   ngOnInit() {
@@ -48,25 +55,5 @@ export class ProductionResponseComponent implements OnInit {
       },
       error: err => this.errMessage = err
     })
-  }
-
-  sortByStartDate<T extends object>(collection: T[], propertyToSort: string)
-  {
-    this.sortAscending = !this.sortAscending;
-
-    if(this.sortAscending)
-    {
-      this.filteredProdSegResponse.sort((a, b) =>{return b.dateRecieved < a.dateRecieved ? 1 : -1});
-    }
-    else
-    {
-      this.filteredProdSegResponse.sort((a, b) =>{return b.dateRecieved > a.dateRecieved ? 1 : -1});
-    }
-  }
-
-  performFilter<T extends object>(value: string, collection: T[], property:string): T[] {
-    value = value.toLocaleLowerCase();
-    return collection.filter((single: T) =>
-    Reflect.get(single, property).toLocaleLowerCase().indexOf(value) !== -1);
   }
 }
