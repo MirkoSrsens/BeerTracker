@@ -1,0 +1,7 @@
+D:\Projekti\BeerFactory\BeerTracker\BeerFactory\bin\Debug\BeerFactory.exe.config
+D:\Projekti\BeerFactory\BeerTracker\BeerFactory\bin\Debug\BeerFactory.exe
+D:\Projekti\BeerFactory\BeerTracker\BeerFactory\bin\Debug\BeerFactory.pdb
+D:\Projekti\BeerFactory\BeerTracker\BeerFactory\obj\Debug\BeerFactory.csprojAssemblyReference.cache
+D:\Projekti\BeerFactory\BeerTracker\BeerFactory\obj\Debug\BeerFactory.csproj.CoreCompileInputs.cache
+D:\Projekti\BeerFactory\BeerTracker\BeerFactory\obj\Debug\BeerFactory.exe
+D:\Projekti\BeerFactory\BeerTracker\BeerFactory\obj\Debug\BeerFactory.pdb

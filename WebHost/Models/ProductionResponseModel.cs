@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -7,6 +8,7 @@ namespace WebHost.Models
 {
     public class ProductionResponseModel
     {
+        [Key]
         public long oid { get; set; }
         public string equipmentId { get; set; }
         public DateTime startTime { get; set; }

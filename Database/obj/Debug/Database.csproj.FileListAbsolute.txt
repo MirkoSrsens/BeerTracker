@@ -4,3 +4,9 @@ E:\Competition\RawNet\Database\obj\Debug\Database.csproj.CoreCompileInputs.cache
 E:\Competition\RawNet\Database\obj\Debug\Database.dll
 E:\Competition\RawNet\Database\obj\Debug\Database.pdb
 E:\Competition\RawNet\Database\obj\Debug\Database.csprojAssemblyReference.cache
+D:\Projekti\BeerFactory\BeerTracker\Database\bin\Debug\Database.dll
+D:\Projekti\BeerFactory\BeerTracker\Database\bin\Debug\Database.pdb
+D:\Projekti\BeerFactory\BeerTracker\Database\obj\Debug\Database.csprojAssemblyReference.cache
+D:\Projekti\BeerFactory\BeerTracker\Database\obj\Debug\Database.csproj.CoreCompileInputs.cache
+D:\Projekti\BeerFactory\BeerTracker\Database\obj\Debug\Database.dll
+D:\Projekti\BeerFactory\BeerTracker\Database\obj\Debug\Database.pdb
