@@ -1,5 +1,0 @@
-E:\Competition\RawNet\InjectorContainer\bin\Release\InjectorContainer.dll
-E:\Competition\RawNet\InjectorContainer\bin\Release\InjectorContainer.pdb
-E:\Competition\RawNet\InjectorContainer\obj\Release\InjectorContainer.csproj.CoreCompileInputs.cache
-E:\Competition\RawNet\InjectorContainer\obj\Release\InjectorContainer.dll
-E:\Competition\RawNet\InjectorContainer\obj\Release\InjectorContainer.pdb

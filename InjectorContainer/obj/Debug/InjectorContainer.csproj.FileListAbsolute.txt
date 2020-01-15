@@ -1,6 +1,0 @@
-E:\Competition\RawNet\InjectorContainer\bin\Debug\InjectorContainer.dll
-E:\Competition\RawNet\InjectorContainer\bin\Debug\InjectorContainer.pdb
-E:\Competition\RawNet\InjectorContainer\obj\Debug\InjectorContainer.csproj.CoreCompileInputs.cache
-E:\Competition\RawNet\InjectorContainer\obj\Debug\InjectorContainer.dll
-E:\Competition\RawNet\InjectorContainer\obj\Debug\InjectorContainer.pdb
-E:\Competition\RawNet\InjectorContainer\obj\Debug\InjectorContainer.csprojAssemblyReference.cache
