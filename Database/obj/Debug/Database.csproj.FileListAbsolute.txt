@@ -4,3 +4,13 @@ E:\Competition\RawNet\Database\obj\Debug\Database.csproj.CoreCompileInputs.cache
 E:\Competition\RawNet\Database\obj\Debug\Database.dll
 E:\Competition\RawNet\Database\obj\Debug\Database.pdb
 E:\Competition\RawNet\Database\obj\Debug\Database.csprojAssemblyReference.cache
+E:\Competition\BeerFactory\Database\bin\Debug\Database.dll
+E:\Competition\BeerFactory\Database\bin\Debug\Database.pdb
+E:\Competition\BeerFactory\Database\bin\Debug\EntityFramework.dll
+E:\Competition\BeerFactory\Database\bin\Debug\EntityFramework.SqlServer.dll
+E:\Competition\BeerFactory\Database\bin\Debug\EntityFramework.xml
+E:\Competition\BeerFactory\Database\bin\Debug\EntityFramework.SqlServer.xml
+E:\Competition\BeerFactory\Database\obj\Debug\Database.csprojAssemblyReference.cache
+E:\Competition\BeerFactory\Database\obj\Debug\Database.csproj.CopyComplete
+E:\Competition\BeerFactory\Database\obj\Debug\Database.dll
+E:\Competition\BeerFactory\Database\obj\Debug\Database.pdb

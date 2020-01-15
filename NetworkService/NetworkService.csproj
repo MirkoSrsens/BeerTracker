@@ -65,17 +65,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Database\Database.csproj">
-      <Project>{c80f5c7d-bb92-44d1-adf5-88b2ef4b81be}</Project>
-      <Name>Database</Name>
-    </ProjectReference>
     <ProjectReference Include="..\InjectorContainer\InjectorContainer.csproj">
       <Project>{C0A22677-477B-4625-B1FD-AC1A17175087}</Project>
       <Name>InjectorContainer</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\RawNet\RawNet.csproj">
-      <Project>{FF08CFD4-91DE-4158-9E2D-D806623E63F6}</Project>
-      <Name>RawNet</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

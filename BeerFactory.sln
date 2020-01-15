@@ -5,13 +5,13 @@ VisualStudioVersion = 16.0.29411.108
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerFactory", "BeerFactory\BeerFactory.csproj", "{176925B4-DABD-4744-96A9-008613554FED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Database\Database.csproj", "{C80F5C7D-BB92-44D1-ADF5-88B2EF4B81BE}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InjectorContainer", "InjectorContainer\InjectorContainer.csproj", "{C0A22677-477B-4625-B1FD-AC1A17175087}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkService", "NetworkService\NetworkService.csproj", "{8C1836CD-FBBF-479C-92FB-B291EB940A99}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebHost", "WebHost\WebHost.csproj", "{D8CDB7A0-8F9A-43A7-B6E7-D58F89F60455}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseManager", "Database\DatabaseManager.csproj", "{041A6FDC-1205-4D8C-8458-04EF282F8278}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,6 @@ Global
 		{176925B4-DABD-4744-96A9-008613554FED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{176925B4-DABD-4744-96A9-008613554FED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{176925B4-DABD-4744-96A9-008613554FED}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C80F5C7D-BB92-44D1-ADF5-88B2EF4B81BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C80F5C7D-BB92-44D1-ADF5-88B2EF4B81BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C80F5C7D-BB92-44D1-ADF5-88B2EF4B81BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C80F5C7D-BB92-44D1-ADF5-88B2EF4B81BE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C0A22677-477B-4625-B1FD-AC1A17175087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C0A22677-477B-4625-B1FD-AC1A17175087}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0A22677-477B-4625-B1FD-AC1A17175087}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,6 +35,10 @@ Global
 		{D8CDB7A0-8F9A-43A7-B6E7-D58F89F60455}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8CDB7A0-8F9A-43A7-B6E7-D58F89F60455}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8CDB7A0-8F9A-43A7-B6E7-D58F89F60455}.Release|Any CPU.Build.0 = Release|Any CPU
+		{041A6FDC-1205-4D8C-8458-04EF282F8278}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{041A6FDC-1205-4D8C-8458-04EF282F8278}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{041A6FDC-1205-4D8C-8458-04EF282F8278}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{041A6FDC-1205-4D8C-8458-04EF282F8278}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -140,7 +140,7 @@ E:\Competition\BeerFactory\WebHost\bin\System.Web.WebPages.Deployment.xml
 E:\Competition\BeerFactory\WebHost\bin\System.Web.WebPages.Razor.xml
 E:\Competition\BeerFactory\WebHost\bin\Antlr3.Runtime.pdb
 E:\Competition\BeerFactory\WebHost\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Competition\BeerFactory\WebHost\obj\Debug\WebHost.csprojAssemblyReference.cache
 E:\Competition\BeerFactory\WebHost\obj\Debug\WebHost.csproj.CopyComplete
 E:\Competition\BeerFactory\WebHost\obj\Debug\WebHost.dll
 E:\Competition\BeerFactory\WebHost\obj\Debug\WebHost.pdb
-E:\Competition\BeerFactory\WebHost\obj\Debug\WebHost.csprojAssemblyReference.cache
