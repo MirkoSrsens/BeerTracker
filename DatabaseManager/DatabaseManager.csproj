@@ -5,24 +5,23 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8C1836CD-FBBF-479C-92FB-B291EB940A99}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>NetworkService</RootNamespace>
-    <AssemblyName>NetworkService</AssemblyName>
+    <ProjectGuid>{041A6FDC-1205-4D8C-8458-04EF282F8278}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DatabaseManager</RootNamespace>
+    <AssemblyName>DatabaseManager</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\Build\NetworkService\</OutputPath>
+    <OutputPath>..\Build\DatabaseManager\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -36,6 +35,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
@@ -43,18 +45,11 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Diagnostics.Tracing.EventSource, Version=1.1.28.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.28\lib\net46\Microsoft.Diagnostics.Tracing.EventSource.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="RabbitMQ.Client, Version=5.0.0.0, Culture=neutral, PublicKeyToken=89e7d7c5feba84ce, processorArchitecture=MSIL">
-      <HintPath>..\packages\RabbitMQ.Client.5.1.1\lib\net451\RabbitMQ.Client.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -63,35 +58,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Messages\EquipmentMessage.cs" />
-    <Compile Include="NetworkServiceMessageHandler.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="MainContext.cs" />
+    <Compile Include="Migrations\202001221820419_init.cs" />
+    <Compile Include="Migrations\202001221820419_init.designer.cs">
+      <DependentUpon>202001221820419_init.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Rmq\IHandle.cs" />
-    <Compile Include="Rmq\IRmqTransport.cs" />
-    <Compile Include="Rmq\RmqTransport.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DatabaseManager\DatabaseManager.csproj">
-      <Project>{041a6fdc-1205-4d8c-8458-04ef282f8278}</Project>
-      <Name>DatabaseManager</Name>
-    </ProjectReference>
     <ProjectReference Include="..\DatabaseModels\DatabaseModels.csproj">
       <Project>{8907C09D-BD81-495B-98A6-E8B9E33723E7}</Project>
       <Name>DatabaseModels</Name>
     </ProjectReference>
-    <ProjectReference Include="..\InjectorContainer\InjectorContainer.csproj">
-      <Project>{C0A22677-477B-4625-B1FD-AC1A17175087}</Project>
-      <Name>InjectorContainer</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Kernel\Kernel.csproj">
-      <Project>{C9218421-37C8-47B8-BC19-D100D8A6D9B8}</Project>
-      <Name>Kernel</Name>
-    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202001221820419_init.resx">
+      <DependentUpon>202001221820419_init.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

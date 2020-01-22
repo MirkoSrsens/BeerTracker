@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using NotificationService;
 
 namespace BeerFactory
 {
@@ -10,6 +6,7 @@ namespace BeerFactory
     {
         static void Main(string[] args)
         {
+            SendNotification.SendNotificationToUser();
         }
     }
 }
